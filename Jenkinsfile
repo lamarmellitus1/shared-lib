@@ -1,5 +1,4 @@
 @Library("shared-library") _
-def gv
 pipeline{
     agent any
     tools{
@@ -7,13 +6,6 @@ pipeline{
 
     }
     stages{
-        stage('init'){
-            steps{
-                script{
-                    gv = load "script.groovy"
-                }
-            }
-        }
         stage('maven build'){
             steps{
                 script{
@@ -29,12 +21,6 @@ pipeline{
 
             }
         }
-        stage('deploy'){
-            steps{
-             script{
-                  gv.deploy()
-            }
-        }
-        }
+        
     }
 }
