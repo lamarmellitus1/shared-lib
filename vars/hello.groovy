@@ -1,1 +1,4 @@
-echo "this is shared library"
+def hello(){
+    echo 'building a jar file'
+    sh 'mvn clean'
+}
