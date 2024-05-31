@@ -1,4 +1,4 @@
-def hello(){
-    echo 'building a jar file'
+def call(){
+    sh "hello world"
 
 }
