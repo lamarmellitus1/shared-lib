@@ -1,4 +1,3 @@
-def call(){
-    sh "echo hello world"
-
+def call(Map config=[:]){
+    sh "echo hello ${congig.name}. Today is ${config.dayOfWeek}"
 }
